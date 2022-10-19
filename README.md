@@ -5,11 +5,11 @@ CFS adopts [pjdfstest](https://github.com/pjd/pjdfstest/tree/master/) to ensure 
 ## Experiment Setup
 
 * Linux 3.10.0
-* Centos 6.3
+* CentOS 6.3
 * CephFS 12.2.5
 
 ## Test Result
-We first printed the mount points for Ext4, XFS and CFS, and then start pjdfstest, respectively.
+We first printed the mount points for Ext4, XFS and CFS (mounted via NFS), and then start pjdfstest, respectively.
 ![](https://github.com/cfs-for-review/CFS-for-review/blob/main/figures/ext4_xfs_cfs.png)
 The results show that both Ext4 and CFS passed all 8832 testcases, while XFS failed 2 test cases.
 
